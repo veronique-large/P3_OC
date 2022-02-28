@@ -226,13 +226,14 @@ p{
     }
     .rappellogo figure img{
         filter: invert(1);
-        width: 120px;
+        width: 130px;
         margin: 20px 0;
         
     }
     h4{
        margin-left: 30px; 
        margin-bottom: 10px;
+       font-weight: normal;
     }
     .couvert{
         display: flex;
@@ -246,7 +247,8 @@ p{
     }
     li{
         list-style-type: none;
-        line-height: 10px;
+        line-height: 30px;
+        font-weight: lighter;
     }
 
 }
