@@ -9,7 +9,12 @@ body{
     background: #FFFFFF;
     color: #111111;
     font-size: 100%;
+    font-family: Roboto, sans-serif;
 }
+ #navigation figure img, .rappellogo figure img{
+    font-family: Shrikhand, sans-serif;
+}
+
 a:link{
     text-decoration: none;
 }
@@ -20,15 +25,17 @@ h1, h2{
     font-size: 28px;
 }
 
+h3,h4{
+    font-size: 24px;
+}
 h3{
-    font-size: 26px;
+    line-height: 35px;
 }
 h4{
-    font-size: 24px;
     color:#FFFFFF;
 }
 p{
-    font-size: 20px;
+    font-size: 18px;
 }
 .coeur .vide{
     color:#111111;
@@ -174,8 +181,7 @@ p{
         padding: 40px 20px 40px 20px;
     }
     #restauration h2{
-        margin-left: 30px;
-        margin-top: 20px;
+        margin: 20px 0 20px;
     }
     #restaurants{
         display: flex;
