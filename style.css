@@ -41,8 +41,7 @@ h4{
 .coeur .vide:hover{
     color:#9356DC;
 }
-
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){*/
     .coeur .vide{
         display: none;
     }
@@ -254,7 +253,114 @@ h4{
         font-weight: lighter;
     }
 
+/*}*/
+@media only screen and (min-width: 768px){
+    .icone, .coeur{
+        font-size: 28px;
+    }
+    /*header */
+    #navigation figure img{ 
+        width: 260px;        /*#navigation*/
+        max-width: 100%;
+    }
+    
+    .Explorermenus form button{
+        width: 270px;
+    }
+    .cercle{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .icone{
+        margin:0 60px 0 40px;
+    }
+
 }
+@media only screen and (min-width: 1024px){
+    .icone, .coeur{
+        font-size: 38px;
+    }
+    .rectangle{
+        font-size: 36px;
+    }
+    header{
+        max-width: 100%;
+    }
+    #navigation figure img{
+        width: 30%;
+    }
+    .geolocalisation{
+        font-size: 34px;
+        margin-left: 145px;
+    }
+    input#nomdeville{
+        width: 360px;
+        font-size:30px;
+        margin-left: 30px;
+    }
+    .Explorermenus form button{
+        width: 300px;
+        height: 52px;
+        font-size: 18px;
+    }
+    .cercle{
+        width: 65px;
+        height: 65px;
+        margin-right: 120px;
+    }
+    .icone{
+        margin-right: 160px;
+    }
+    .choisir{
+        margin: 0 21px 20px;
+    }
+    #restauration{             /*#restauration*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #restaurants{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #restaurants figure{
+        width: 462px;
+        margin: 15px;
+    }
+    #restaurants figure img{
+        height: 280px;
+    }
+    
+    #restaurants .rectangle{
+        right: 140px;
+        margin: 22px;
+    }
+    #restaurants figure .rectangle{
+        left: 300px;
+        margin: 11px;
+    }
+    #restaurants .rectangle, #restaurants figure .rectangle{
+        width: 155px;
+        height: 45px;
+    }
+    
+}
+@media only screen and (max-width: 280px){
+    .Explorermenus{
+        padding: 40px 15px 50px;
+    }
+} 
+
+    
+
+    
+
+    
+
+    
+
     
 
 
