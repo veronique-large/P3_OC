@@ -216,10 +216,10 @@ h2{
     }
      footer a.proposer, footer a.partenariat{
         text-decoration: none;
-    }
-       
- /*}*/
- @media screen and (min-width: 768px){
+    }  
+/*}*/
+
+@media screen and (min-width: 768px){
     nav figure img{
         width: 300px;
         margin: 20px 150px 25px 100px;
@@ -464,7 +464,72 @@ h2{
         text-decoration: none;
     }
        
-/*}*/ 
+/*}*/
+/*@media screen and (min-width: 768px){
+    h1{
+        font-size: xx-large;
+    }
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figure img{
+        height: 480px;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+/*}*/
+/*@media screen and (min-width: 1024px){
+    h1{
+        font-size: 48px;
+    }
+    div .coeur{
+        font-size: 38px;
+    }
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figure img{
+        height: 650px;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
+    
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+
+/*}*/
   /*lapalettedugour.*/                             /*lapalettedugour.*/
 /*@media screen and (max-width: 768px){
     h1{
@@ -653,9 +718,62 @@ h2{
         text-decoration: none;
         
     }  
-/*} 
-  /*ledelicedessens*/                           /*ledelicedessens*/
+/*}*/ 
+/*@media screen and (min-width: 768px){
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+/*}*/
+/*@media screen and (min-width: 1024px){
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
+    
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+/*}*/
+  /*ledelicedessens*/                          /*ledelicedessens*/
 /*@media screen and (max-width: 768px){
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
     .coeur .vide{
         display: block;
     }
@@ -666,8 +784,9 @@ h2{
         margin-right: 18px;
         font-size: 28px;
     }
+   
     #Plats h3{
-        margin-right: 13px;
+        margin-right: 50px;
     }
     header{                              
         display: flex;
@@ -735,6 +854,7 @@ h2{
     #Entrees, #Plats, #Desserts{           
         padding: 15px 15px 30px 15px;
     }
+   
     .descriptif{                       
         display:flex;
         justify-content: space-between;
@@ -766,7 +886,7 @@ h2{
     div .prix{
         display: flex;
         align-items: flex-end;
-        margin: 5px 8px 6px 8px;
+        margin: 5px 8px 6px 4px;
         font-weight: 600;
     }
     aside{
@@ -832,9 +952,74 @@ h2{
         line-height: 30px;
         font-weight: lighter;
     }
-     footer a .proposer, footer a .partenariat{
+     footer a.proposer, footer a.partenariat{
         text-decoration: none;
     }
+      
+/*}*/
+/*@media screen and (min-width: 768px){
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+/*}*/
+/*@media screen and (min-width: 1024px){
+    h1{
+        font-size: 48px;
+    }
+    .coeur{
+        font-size: 38px;
+    }
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
     
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+
+/*}*/
+/*@media only screen and (max-width: 540px){
+    nav figure img{
+        margin: 20px 100px 25px 0;
+    }
+    #Plats h3{
+        margin-right: 180px;
+    }
+/*}*/
+
     
-}*/
