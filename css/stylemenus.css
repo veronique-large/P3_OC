@@ -1,0 +1,1026 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #FFFFFF;
+    color: #111111;
+    font-family: Roboto,sans-serif;
+}
+#containeur{
+    max-width: 1280px;
+    margin:auto;
+    padding:0;
+}
+h1, nav img{
+    font-family: Shrikhand, sans-serif;
+
+}
+h1,h2,h3,h4{
+    color:#000000;
+}
+h2{
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+h2{
+    border-bottom: solid 3px #99e2d0;
+    max-width: 60px;
+}
+
+.coeur .vide{
+    color:#111111;
+}
+.coeur .plein{
+    color: #9356DC;
+}
+.coeur .vide:hover{
+    color:#9356DC;
+}
+@media screen and (max-width: 768px){
+    .coeur .vide{
+        display: block;
+    }
+    .coeur .plein{
+        display: none;
+    }
+    .coeur{
+        margin-right: 18px;
+        font-size: 28px;
+    }
+    header{                              
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    nav figure{
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.fleche{
+        margin-right: 30px;
+        font-size: 18px;
+        max-width: 100%;
+    }
+    nav figure img{
+        width: 180px;
+        max-width: 100%;
+        height:auto;
+        margin: 20px 60px 25px 0;
+    }
+    main{                               
+        margin: 0;
+        background-color: #f6f6f6;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    main figure{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 375px;
+        height: 350px;
+        overflow: hidden;
+        
+    
+    }
+    main figure img{
+        width: 375px; 
+        height: 290px;
+        object-fit: cover;
+        
+    
+    }
+    main figcaption{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 375px;
+        background: #f6f6f6;
+        padding: 30px 8px 2px;
+        border-radius: 45px 45px 0 0;
+        position: relative;
+        bottom: 278px;
+       
+    }
+    h1{
+        font-weight: 400;
+    
+    }
+    #Entrees, #Plats, #Desserts{           
+        padding: 15px 15px 30px 15px;
+    }
+    .descriptif{                       
+        display:flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        padding:8px 6px 8px 6px;
+        border-radius: 15px;
+        box-shadow:  5px 5px 5px#cecece;
+
+    }
+    .texte{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    div .choix{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: #99e2d0;
+        color:#FFFFFF;
+        width: 48px;
+        max-width: 100%;
+        border-radius: 0 5px 5px 0;
+        display: none;
+    }
+    div .prix{
+        display: flex;
+        align-items: flex-end;
+        margin: 5px 5px 6px 0;
+        font-weight: 600;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form button{
+        width: 185px;
+        height: 42px;
+        background-color: #9356DC;
+        color:#FFFFFF;
+        border-radius: 20px;
+        border: transparent;
+        box-shadow: 0px 5px 5px 0px #cecece,
+                    12px 16px 26px inset#ea72da;
+        font-weight: 500;
+        font-size: small; 
+        margin-bottom: 70px;          
+    }
+    
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: #353535;
+        color: #FFFFFF;
+        padding: 10px 0 30px 20px;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    .rappellogo figure img{
+        filter: invert(1);
+        width: 130px;
+        margin: 20px 0;
+        
+    }
+    h4{
+       margin-left: 30px; 
+       margin-bottom: 10px;
+       font-weight: normal;
+       color: #FFFFFF;
+    }
+    .couvert{
+        display: flex;
+        margin-top: 70px;
+        position: absolute;
+    }
+    .main{
+        display: flex;
+        margin-top: 110px;
+        position: absolute;
+    }
+    li{
+        list-style-type: none;
+        line-height: 30px;
+        font-weight: lighter;
+    }
+     footer a.proposer, footer a.partenariat{
+        text-decoration: none;
+    }  
+}
+
+/*@media screen and (min-width: 768px){
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+}
+@media screen and (min-width: 1024px){
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
+    
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+
+}
+ 
+
+    /*lanoteenchantee*/                     /*lanoteenchantee*/
+/*@media screen and (max-width: 768px){
+    .coeur .vide{
+        display: block;
+    }
+    .coeur .plein{
+        display: none;
+    }
+    .coeur{
+        margin-right: 18px;
+        font-size: 28px;
+    }
+    h1{
+        font-weight: 400;
+        font-size: 28px;
+    }
+    p{
+        font-size: 15px;
+    }
+    header{                              
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    nav figure{
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.fleche{
+        display: flex;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    nav figure img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 180px;
+        max-width: 100%;
+        margin: 20px 60px 25px 0;
+    }
+    main{                               
+        margin: 0;
+        background-color: #f6f6f6;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    main figure{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+    main figure img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        
+    }
+    main figcaption{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        background: #f6f6f6;
+        padding: 35px 15px 2px 15px;
+        border-radius: 45px 45px 0 0;
+        position: relative;
+        bottom: 42px;
+       
+    }
+    #Entrees, #Plats, #Desserts{           
+        padding: 15px 15px 30px 15px;
+    }
+    .descriptif{                       
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        padding:8px 2px 8px 2px;
+        border-radius: 15px;
+        box-shadow:  5px 5px 5px#cecece;
+
+    }
+    .texte{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    div .choix{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: #99e2d0;
+        color:#FFFFFF;
+        width: 48px;
+        max-width: 100%;
+        border-radius: 0 5px 5px 0;
+        display: none;
+    }
+    div .prix{
+        display: flex;
+        align-items: flex-end;
+        margin: 5px 5px 6px 2px;
+        font-weight: 600;
+    }
+    #Desserts .prix{
+        margin: 0;
+        padding-bottom: 5px;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form{
+        display:flex;
+        justify-content: center;
+        width: 185px;
+        height: 52px;
+        max-width: 100%;
+        background-color: #9356DC;
+        border-radius: 25px;
+        box-shadow: 0px 5px 5px 0px #cecece,
+                    12px 16px 26px inset#ea72da;
+        margin-bottom: 70px;            
+    }
+    form button {
+        border:transparent;
+        background-color: #9356DC;
+        color:#FFFFFF;
+        font-weight: 500;
+        font-size: medium;
+
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: #111111;
+        color: #FFFFFF;
+        padding: 10px 0 30px 20px;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    .rappellogo figure img{
+        filter: invert(1);
+        width: 130px;
+        margin: 20px 0;
+        
+    }
+    h4{
+       margin-left: 30px; 
+       margin-bottom: 10px;
+       font-weight: normal;
+       color: #FFFFFF;
+    }
+    .couvert{
+        display: flex;
+        margin-top: 70px;
+        position: absolute;
+    }
+    .main{
+        display: flex;
+        margin-top: 110px;
+        position: absolute;
+    }
+    li{
+        list-style-type: none;
+        line-height: 30px;
+        font-weight: lighter;
+    }
+     footer a.proposer, footer a.partenariat{
+        text-decoration: none;
+    }
+       
+/*}*/
+/*@media screen and (min-width: 768px){
+    h1{
+        font-size: xx-large;
+    }
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figure img{
+        height: 480px;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+/*}*/
+/*@media screen and (min-width: 1024px){
+    h1{
+        font-size: 48px;
+    }
+    div .coeur{
+        font-size: 38px;
+    }
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figure img{
+        height: 650px;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
+    
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+
+/*}*/
+   /*lapalettedugour.html*/                           /*lapalettedugour.html*/
+/*@media screen and (max-width: 768px){
+    h1{
+        font-weight: 400;
+        font-size: 28px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .coeur .vide{
+        display: block;
+    }
+    .coeur .plein{
+        display: none;
+    }
+    .coeur{
+        margin-right: 18px;
+        font-size: 28px;
+    }
+    header{                              
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    nav figure{
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.fleche{
+        display: flex;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    nav figure img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 180px;
+        max-width: 100%;
+        margin: 20px 60px 25px 0;
+    }
+    main{                               
+        margin: 0;
+        background-color: #f6f6f6;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    main figure{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+    main figure img{
+        max-width: 100%;
+        object-fit: cover;
+        
+    }
+    main figcaption{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        background: #f6f6f6;
+        padding: 35px 15px 2px 15px;
+        border-radius: 45px 45px 0 0;
+        position: relative;
+        bottom: 42px;
+       
+    }
+    #Entrees, #Plats, #Desserts{           
+        padding: 15px 15px 30px 15px;
+    }
+    .descriptif{                       
+        display:flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        padding:8px 2px 8px 2px;
+        border-radius: 15px;
+        box-shadow:  5px 5px 5px#cecece;
+
+    }
+    .texte{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    div .choix{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: #99e2d0;
+        color:#FFFFFF;
+        width: 48px;
+        max-width: 100%;
+        border-radius: 0 5px 5px 0;
+        display: none;
+    }
+    div .prix{
+        display: flex;
+        align-items: flex-end;
+        margin: 0 4px 6px 2px;
+        font-weight: 600;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form{
+        display:flex;
+        justify-content: center;
+        width: 185px;
+        height: 52px;
+        max-width: 100%;
+        background-color: #9356DC;
+        border-radius: 25px;
+        box-shadow: 0px 5px 5px 0px #cecece,
+                    12px 16px 26px inset#ea72da;
+        margin-bottom: 70px;            
+    }
+    form button {
+        border:transparent;
+        background-color: #9356DC;
+        color:#FFFFFF;
+        font-weight: 500;
+        font-size: medium;
+
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: #111111;
+        color: #FFFFFF;
+        padding: 10px 0 30px 20px;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    .rappellogo figure img{
+        filter: invert(1);
+        width: 130px;
+        margin: 20px 0;
+        
+    }
+    h4{
+       margin-left: 30px; 
+       margin-bottom: 10px;
+       font-weight: normal;
+       color: #FFFFFF;
+    }
+    .couvert{
+        display: flex;
+        margin-top: 70px;
+        position: absolute;
+    }
+    .main{
+        display: flex;
+        margin-top: 110px;
+        position: absolute;
+    }
+    li{
+        list-style-type: none;
+        line-height: 30px;
+        font-weight: lighter;
+    }
+     footer a.proposer, footer a.partenariat{
+        text-decoration: none;
+        
+    }  
+/*}*/
+/*@media screen and (min-width: 768px){
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+/*}*/
+/*@media screen and (min-width: 1024px){
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
+    
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+/*}*/
+  /*ledelicedessens.html*/                          /*ledelicedessens.html*/
+/*@media screen and (max-width: 768px){
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .coeur .vide{
+        display: block;
+    }
+    .coeur .plein{
+        display: none;
+    }
+    .coeur{
+        margin-right: 18px;
+        font-size: 28px;
+    }
+   
+    #Plats h3{
+        margin-right: 50px;
+    }
+    header{                              
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    nav figure{
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.fleche{
+        display: flex;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    nav figure img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 180px;
+        max-width: 100%;
+        margin: 20px 60px 25px 0;
+    }
+    main{                               
+        margin: 0;
+        background-color: #f6f6f6;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    main figure{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+    main figure img{
+        max-width: 100%;
+        object-fit: cover;
+        
+    }
+    main figcaption{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        background: #f6f6f6;
+        padding: 35px 15px 2px 15px;
+        border-radius: 45px 45px 0 0;
+        position: relative;
+        bottom: 42px;
+       
+    }
+    #Entrees, #Plats, #Desserts{           
+        padding: 15px 15px 30px 15px;
+    }
+   
+    .descriptif{                       
+        display:flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        padding:8px 6px 8px 6px;
+        border-radius: 15px;
+        box-shadow:  5px 5px 5px#cecece;
+
+    }
+    .texte{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    div .choix{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: #99e2d0;
+        color:#FFFFFF;
+        width: 48px;
+        max-width: 100%;
+        border-radius: 0 5px 5px 0;
+        display: none;
+    }
+    div .prix{
+        display: flex;
+        align-items: flex-end;
+        margin: 5px 8px 6px 4px;
+        font-weight: 600;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form{
+        display:flex;
+        justify-content: center;
+        width: 185px;
+        height: 52px;
+        max-width: 100%;
+        background-color: #9356DC;
+        border-radius: 25px;
+        box-shadow: 0px 5px 5px 0px #cecece,
+                    12px 16px 26px inset#ea72da;
+        margin-bottom: 70px;            
+    }
+    form button {
+        border:transparent;
+        background-color: #9356DC;
+        color:#FFFFFF;
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: #111111;
+        color: #FFFFFF;
+        padding: 10px 0 30px 20px;
+        min-width: 350px;
+        max-width: 100%;
+    }
+    .rappellogo figure img{
+        filter: invert(1);
+        width: 130px;
+        margin: 20px 0;
+        
+    }
+    h4{
+       margin-left: 30px; 
+       margin-bottom: 10px;
+       font-weight: normal;
+       color: #FFFFFF;
+    }
+    .couvert{
+        display: flex;
+        margin-top: 70px;
+        position: absolute;
+    }
+    .main{
+        display: flex;
+        margin-top: 110px;
+        position: absolute;
+    }
+    li{
+        list-style-type: none;
+        line-height: 30px;
+        font-weight: lighter;
+    }
+     footer a.proposer, footer a.partenariat{
+        text-decoration: none;
+    }
+      
+/*}*/
+/*@media screen and (min-width: 768px){
+    nav figure img{
+        width: 300px;
+        margin: 20px 150px 25px 100px;
+    }
+    div .fleche{
+        font-size: 32px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    main figcaption{
+        padding: 35px 30px 2px;
+    }
+    div .descriptif{
+        padding:0 65px 0;
+    }
+    form{
+        width: 300px;
+    }
+    form button{
+        font-size: larger;
+    }
+/*}*/
+/*@media screen and (min-width: 1024px){
+    h1{
+        font-size: 48px;
+    }
+    .coeur{
+        font-size: 38px;
+    }
+    nav figure img{
+        width: 400px;
+        margin-right: 200px;
+    }
+    div .fleche{
+        font-size: 38px ;
+    }
+    main figcaption{
+        justify-content: space-around;
+    }
+    .descriptif{
+        padding: 0 150px;
+    }
+    
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 50px 30px;
+    } 
+    form{
+        width: 370px;
+    }
+    form button{
+        font-size: 30px;
+    }
+
+/*}*/
+/*@media only screen and (max-width: 540px){
+    nav figure img{
+        margin: 20px 100px 25px 0;
+    }
+    #Plats h3{
+        margin-right: 180px;
+    }
+/*}*/
+
+    
