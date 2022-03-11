@@ -19,9 +19,6 @@ body{
     font-family: Shrikhand, sans-serif;
 }
 
-a:link{
-    text-decoration: none;
-}
 h1,h2,h3,h4{
     color: #000000;
 }
@@ -32,30 +29,10 @@ h3{
 h4{
     color:#FFFFFF;
 }
-.coeur .vide{
-    color:#111111;
-}
-.coeur .plein{
-    color: #9356DC;
-}  
-
 
 /*@media screen and (max-width: 768px){*/
-    .coeur .vide{
-        display: block;
-    }
-    .coeur .plein{
-        display: none;
-    }
-    .coeur .vide:hover{
-        color:#9356DC;
-    }
-    .coeur{
-        margin-right: 20px;
-        font-size: 21px;
-    }
-
-    header{
+    
+    header{                                     /*header*/
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -99,23 +76,21 @@ h4{
         background: #eaeaea;
         color:#111111;
     }
-    .Explorermenus{
+    .Explorermenus{              /*section.Exploremenus*/
         display:flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 40px 30px 50px 30px;
+        padding: 40px 22px 50px;
         white-space: pre-line;
         background-color: #f6f6f6;
+      text-align: center;
     }
     .Explorermenus h1{
         line-height: 30px;
         text-align: center;
         margin-bottom: 20px;
-    }
-    .Explorermenus{
-        text-align: center;
     }
     .Explorermenus form button{
         width: 185px;
@@ -131,31 +106,38 @@ h4{
     main{
         padding: 0;
     }
-    #Fonctionnement{
+    #Fonctionnement{                /*section #Fonctionnement*/
         display: flex;
         flex-direction: column;
         white-space: pre-line;
-        padding:40px 20px 40px 20px;
+        padding:40px 20px 40px;
         margin-bottom: 20px;
         max-width: 100%;
+        margin-left: 7px;
     }
     #Fonctionnement h2{
         margin-bottom: 20px;
     }
+    #test{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .choisir div{
         display: flex;
-        flex-wrap: nowrap;
-        max-width: 100%;
         align-items: center;
     }
     .choisir{
         background: #f6f6f6;
         margin-bottom: 20px;
-        border-radius: 20px;
+        border-radius: 25px;
         box-shadow: 5px 5px 5px #e7e7e7;
-        max-width: 100%;
+        height: 70px;
+        width: 100%;
+        max-width: 400px;
+        
     }
-    .cercle{
+    div .cercle{
         display:flex;
         justify-content: center;
         align-items: center;
@@ -164,20 +146,23 @@ h4{
         border-radius: 50%;
         color:#FFFFFF;
         background: #9356DC;
-        margin-right: 14px;
+        margin-right: 10px;
+        margin-left: -7px;
     }
     .icone{
-        margin-right: 13px;
+        margin: 0 10px 0 5px;
     }
     .choisir div p{
         color:#111111;
         font-weight: 600;
+        display: flex;
+        justify-content: center;
     }
-    #restauration{
+    #restauration{                          /*section#restauration*/
         display:flex;
         flex-direction: column;
         background-color:#f6f6f6;
-        padding: 40px 20px 40px 20px;
+        padding: 40px 20px 40px;
     }
     #restauration h2{
         margin: 20px 0 20px;
@@ -208,6 +193,23 @@ h4{
         padding: 20px;
         background: #FFFFFF;
     }
+    .coeur{
+        margin-right: 8px;
+        font-size: 21px;
+    }
+    
+    .coeur .plein{
+        color: #9356DC;
+        display: none;
+    }  
+    
+    .coeur .vide{
+        display: block;
+        color:#111111;
+    }
+    .coeur .vide:hover{
+            color:#9356DC;
+    }
     
     #restaurants .rectangle, figure #restaurants .rectangle{
         display: flex;
@@ -222,7 +224,7 @@ h4{
         right: 36px;
     }
     
-    footer{
+    footer{                                     /*footer*/
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -234,6 +236,7 @@ h4{
     .rappellogo figure img{
         filter: invert(1);
         width: 130px;
+        height: auto;
         margin: 20px 0;
         
     }
@@ -241,6 +244,9 @@ h4{
        margin-left: 30px; 
        margin-bottom: 10px;
        font-weight: normal;
+    }
+    a:link{
+        text-decoration: none;
     }
     .couvert{
         display: flex;
@@ -259,116 +265,3 @@ h4{
     }
 
 /*}*/
-@media only screen and (min-width: 768px){
-    .icone, .coeur{
-        font-size: 28px;
-    }
-    /*header */
-    #navigation figure img{ 
-        width: 260px;        /*#navigation*/
-        max-width: 100%;
-    }
-    
-    .Explorermenus form button{
-        width: 270px;
-    }
-    .cercle{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-    .icone{
-        margin:0 60px 0 40px;
-    }
-
-}
-@media only screen and (min-width: 1024px){
-    .icone, .coeur{
-        font-size: 38px;
-    }
-    .rectangle{
-        font-size: 36px;
-    }
-    header{
-        max-width: 100%;
-    }
-    #navigation figure img{
-        width: 30%;
-    }
-    .geolocalisation{
-        font-size: 34px;
-        margin-left: 145px;
-    }
-    input#nomdeville{
-        width: 360px;
-        font-size:30px;
-        margin-left: 30px;
-    }
-    .Explorermenus form button{
-        width: 300px;
-        height: 52px;
-        font-size: 18px;
-    }
-    .cercle{
-        width: 65px;
-        height: 65px;
-        margin-right: 120px;
-    }
-    .icone{
-        margin-right: 160px;
-    }
-    .choisir{
-        margin: 0 21px 20px;
-    }
-    #restauration{             /*#restauration*/
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #restaurants{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #restaurants figure{
-        width: 462px;
-        margin: 15px;
-    }
-    #restaurants figure img{
-        height: 280px;
-    }
-    
-    #restaurants .rectangle{
-        right: 140px;
-        margin: 22px;
-    }
-    #restaurants figure .rectangle{
-        left: 300px;
-        margin: 11px;
-    }
-    #restaurants .rectangle, #restaurants figure .rectangle{
-        width: 155px;
-        height: 45px;
-    }
-    
-}
-@media only screen and (max-width: 280px){
-    .Explorermenus{
-        padding: 40px 15px 50px;
-    }
-} 
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
