@@ -9,6 +9,7 @@ body{
     background: #FFFFFF;
     color: #111111;
     font-family: Roboto, sans-serif;
+    cursor: pointer;
 }
 #container{
     max-width: 1280px;
@@ -160,6 +161,7 @@ h4{
     }
     #restauration{                          /*section#restauration*/
         display:flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         background-color:#f6f6f6;
         padding: 40px 20px 40px;
@@ -169,16 +171,20 @@ h4{
     }
     #restaurants{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     #restaurants figure{
         display: flex;
         flex-direction: column;
+        width: 635px;
         max-width: 100%;
         margin-bottom: 20px;
         border-radius: 20px;
         box-shadow: 5px 5px 2px #e7e7e7;  
         overflow: hidden; 
+        margin-right: 4px;
+        position: relative;
     }
     #restaurants figure img{ 
         width: 100%;
@@ -198,20 +204,21 @@ h4{
         font-size: 21px;
     }
     
-    .coeur .plein{
-        color: #9356DC;
-        display: none;
+    #restauration div .coeur .plein{
+        color: transparent;
+        position: absolute;
+        bottom: -491px
     }  
     
-    .coeur .vide{
+    #restauration div .coeur .vide{
         display: block;
         color:#111111;
+        position: relative;
     }
-    .coeur .vide:hover{
+    #restauration div .coeur .plein:hover{
             color:#9356DC;
     }
-    
-    #restaurants .rectangle, figure #restaurants .rectangle{
+    #restaurants .rectangle{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -221,9 +228,8 @@ h4{
         color: #008766;
         margin-top: 10px;
         position: absolute;
-        right: 36px;
+        right: 18px;
     }
-    
     footer{                                     /*footer*/
         display: flex;
         justify-content: flex-start;
