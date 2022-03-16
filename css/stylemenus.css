@@ -247,64 +247,35 @@ p{
      footer a.proposer, footer a.partenariat{
         text-decoration: none;
     }  
-/*}*/
-
+/*}*/   
 @media screen and (min-width: 768px){
     header{
         margin: 0 5px 5px;
     }
     main{
-        margin: 0 5px 0;
+        margin: 0 5px;
     }
     nav{
         justify-content: space-evenly;
     }
-    #Entrees, #Plats, #Desserts{
+    #Entrees .descriptif, #Plats .descriptif, #Desserts .descriptif{
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
-    #Plats p, #Desserts p{
-        white-space: normal;
-    }
-    #Desserts h3{
-        margin-right: 0;
-    }
-    .descriptif{
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        height: 120px;
-        margin: 62px 10px 0 0;
+        width: 350px;
+        max-width: 100%;
     }
     #Plats .descriptif .texte, #Entrees .descriptif .texte{
         white-space: normal;
         overflow: visible;
     }
-    h2{
-        margin-bottom: 160px;
+    #Entrees, #Plats, #Desserts{
+        padding: 15px 12px 30px;
     }
-    h3{
-        font-size:16px;
-        margin-bottom: 5px;
-    }
-    #Entrees div .prix, #Plats div .prix, #Desserts div .prix{
-        display: flex;
-        justify-content: flex-end;
-        font-weight: 600;
-        margin: 0 10px 5px;
-    }
-    
-    p{
-        font-size: 15px;
-        margin-top: 5px;
-    }
-    .texte{
+    #Menus{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        line-height: 18px;
+        justify-content: space-around;
     }
+
     footer{
         margin: 0 5px 0;
     }
@@ -313,7 +284,4 @@ p{
     #Plats div .prix{
         margin: 0 4px 6px 8px;
     }
-
-}
-    
-    
+}      
