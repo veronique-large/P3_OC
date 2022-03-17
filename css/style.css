@@ -207,13 +207,18 @@ h4{
     #restauration div .coeur .plein{
         color: transparent;
         position: absolute;
-        bottom: -491px
+        bottom: 47px
     }  
     
     #restauration div .coeur .vide{
         display: block;
         color:#111111;
         position: relative;
+       /* background: linear-gradient(#9356DC,#ea72da);
+        width: 21px;
+        height: 21px;
+        border-radius: 77%;
+        overflow: hidden;*/
     }
     #restauration div .coeur .plein:hover{
             color:#9356DC;
