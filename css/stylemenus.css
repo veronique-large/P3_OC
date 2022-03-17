@@ -56,7 +56,7 @@ p{
         justify-content: center;
     }
     
-    div.fleche{
+    .fleche{
         margin-right: 30px;
         font-size: 18px;
         max-width: 100%;
@@ -127,28 +127,33 @@ p{
         display: flex; 
         flex-wrap: wrap; 
         flex-direction: column;        
-        padding: 15px 17px 30px;
+        padding: 15px 12px 30px;
     }
     
     .descriptif{                       
         display:flex;
-        justify-content: space-between;
+        align-items: center;
         max-width: 100%;
+        height: 71px;
         margin-bottom: 20px;
         background: #FFFFFF;
-        padding:8px 6px 8px 6px;
+        padding:8px 0 8px 8px;
         border-radius: 15px;
         box-shadow:  5px 5px 5px#cecece;
-
     }
     .texte{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         line-height: 30px;
+        width: 98%;
+        height: 61px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     h3{
-        margin-bottom: 5px;
+        margin-bottom: 1px;
     }
     div .choix{
         display:flex;
@@ -156,37 +161,19 @@ p{
         align-items: center;
         background: #99e2d0;
         color:#FFFFFF;
-        width: 48px;
+        width: 76px;
         max-width: 100%;
-        border-radius: 0 5px 5px 0;
+        height: 71px;
+        border-radius: 0 15px 15px 0;
         display: none;
     }
     div .prix{
         display: flex;
         align-items: flex-end;
-        margin: 5px 5px 6px 0;
+        margin: 0 -23px 4px 0;
         font-weight: 600;
-    }
-    #Plats div .prix{
-        margin: 0 4px 6px 14px;
-    }
-    #Desserts h3{
-        margin-right: -3px;
-    }
-    #Desserts p{
-        white-space: nowrap;
-    }
-    #Plats .descriptif, #Entrees .descriptif{
-        width: 100%;
-    }
-    #Plats .descriptif .texte, #Entrees .descriptif .texte{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    
-    }
-    #Plats .texte h3, #Entrees .descriptif h3{
-        white-space: normal;
+        width: 20%;
+        height: 54px;
     }
     form{
         display:flex;
@@ -224,7 +211,7 @@ p{
         
     }
     h4{
-       margin-left: 30px; 
+       margin-left: 30px;
        margin-bottom: 10px;
        font-weight: normal;
        color: #FFFFFF;
@@ -258,17 +245,11 @@ p{
     nav{
         justify-content: space-evenly;
     }
-    #Entrees .descriptif, #Plats .descriptif, #Desserts .descriptif{
+    .descriptif{
         display: flex;
-        width: 350px;
+        width: 351px;
+        height: 71px;
         max-width: 100%;
-    }
-    #Plats .descriptif .texte, #Entrees .descriptif .texte{
-        white-space: normal;
-        overflow: visible;
-    }
-    #Entrees, #Plats, #Desserts{
-        padding: 15px 12px 30px;
     }
     #Menus{
         display: flex;
@@ -280,8 +261,4 @@ p{
         margin: 0 5px 0;
     }
 }
-@media screen and (max-width: 320px){
-    #Plats div .prix{
-        margin: 0 4px 6px 8px;
-    }
-}      
+     
