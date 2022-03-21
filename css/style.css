@@ -103,6 +103,12 @@ h4{
         box-shadow: 0px 5px 5px 0px #cecece,
                     12px 16px 26px inset#ea72da;
         font-weight: 500;
+        transition-duration: 8s;
+    }
+    .Explorermenus form button:hover{
+        background-color: #ba9fdb;
+        box-shadow: 0 15px 15px 0 #cecece,
+                    12px 16px 26px inset #f09be4;
     }
     main{
         padding: 0;
@@ -137,8 +143,8 @@ h4{
         height: 70px;
         width: 100%;
         max-width: 400px;
-        
-    }
+        color: #7e7e7e;   
+    }  
     div .cercle{
         display:flex;
         justify-content: center;
@@ -155,7 +161,7 @@ h4{
         margin: 0 24px 0 12px;
     }
     .icone:hover{
-        background-color: #ea72da;
+        color: #ea72da;
     }
     .choisir div p{
         color:#111111;
@@ -206,24 +212,28 @@ h4{
         font-size: 21px;
     }
     
-    #restauration div .coeur .plein{
-        color: transparent;
+    #restauration  .coeur .plein{
         position: absolute;
-        bottom: 47px
-    }  
+        bottom: 47px;
+        opacity: 0;
+    }
     
     #restauration div .coeur .vide{
         display: block;
         color:#111111;
         position: relative;
-       /* background: linear-gradient(#9356DC,#ea72da,#ea7290);
-        width: 21px;
-        height: 21px;
-        border-radius: 77%;
-        overflow: hidden;*/
+        opacity: 0.8;
     }
-    #restauration div .coeur .plein:hover{
-            color:#9356DC;
+    #restauration div .coeur .plein{
+        transition-property: all;
+        transition-duration: 10s;
+    }
+    #restauration  .coeur .plein:hover{
+        opacity: 1;
+        background: -webkit-linear-gradient(top, #9356DC 4%, #ea72da 79%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
     }
     #restaurants .rectangle{
         display: flex;
