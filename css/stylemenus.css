@@ -104,21 +104,29 @@ p{
         font-weight: 100;
     
     }
-    .coeur .vide{
-        color:#111111;
-    }
+    
     .coeur .plein{
-        color: transparent;
         position: absolute;
-        top: 42px
+        top: 42px;
+        opacity: 0;
     }
     .coeur .vide{
         display: block;
         position: relative;
+        color:#111111;
+        opacity: 0.8;
+    }
+    .coeur .plein{
+        transition-property: all;
+        transition-duration: 10s;
     }
     
     .coeur .plein:hover{
-        color:#9356DC;
+        opacity: 1;
+        background: -webkit-linear-gradient(top, #9356DC 4%, #ea72da 79%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
     }
     .coeur{
         margin-right: 11px;
@@ -192,7 +200,14 @@ p{
                     12px 16px 26px inset#ea72da;
         font-weight: 500;
         font-size: small; 
-        margin-bottom: 70px;          
+        margin-bottom: 70px;
+        transition-duration: 8s;          
+    }
+    form button:hover{
+        background-color: #ba9fdb;
+        box-shadow: 0 15px 15px 0 #cecece,
+                    12px 16px 26px inset #f09be4;
+
     }
     
     footer{
