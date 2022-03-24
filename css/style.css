@@ -9,7 +9,6 @@ body{
     background: #FFFFFF;
     color: #111111;
     font-family: Roboto, sans-serif;
-    cursor: pointer;
 }
 #containeur{
     max-width: 1920px;
@@ -29,6 +28,9 @@ h3{
 }
 h4{
     color:#FFFFFF;
+}
+form button, .coeur, div .choisir{
+    cursor: pointer;
 }
 
 /*@media screen and (max-width: 768px){*/
@@ -86,7 +88,7 @@ h4{
         padding: 40px 22px 50px;
         white-space: pre-line;
         background-color: #f6f6f6;
-      text-align: center;
+        text-align: center;
     }
     .Explorermenus h1{
         line-height: 30px;
@@ -103,12 +105,12 @@ h4{
         box-shadow: 0px 5px 5px 0px #cecece,
                     12px 16px 26px inset#ea72da;
         font-weight: 500;
-        transition-duration: 8s;
     }
     .Explorermenus form button:hover{
         background-color: #ba9fdb;
         box-shadow: 0 15px 15px 0 #cecece,
                     12px 16px 26px inset #f09be4;
+        transition-duration: 2s;
     }
     main{
         padding: 0;
@@ -160,8 +162,9 @@ h4{
     .icone{
         margin: 0 24px 0 12px;
     }
-    .icone:hover{
-        color: #ea72da;
+    .choisir:hover{
+        color: #9356DC;
+        background-color: #f5edff;
     }
     .choisir div p{
         color:#111111;
@@ -212,28 +215,26 @@ h4{
         font-size: 21px;
     }
     
-    #restauration  .coeur .plein{
-        position: absolute;
-        bottom: 47px;
-        opacity: 0;
-    }
-    
     #restauration div .coeur .vide{
         display: block;
-        color:#111111;
+        color:#7e7e7e;
         position: relative;
         opacity: 0.8;
     }
     #restauration div .coeur .plein{
-        transition-property: all;
-        transition-duration: 10s;
-    }
-    #restauration  .coeur .plein:hover{
-        opacity: 1;
+        position: absolute;
+        bottom: 47px;
+        opacity: 0;
         background: -webkit-linear-gradient(top, #9356DC 4%, #ea72da 79%);
         background-clip: border-box;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;   
+        -webkit-text-fill-color: transparent;
+        
+    }
+    #restauration  .coeur .plein:hover{
+        opacity: 1;
+        transition-property: all;
+        transition-duration: 10s;  
     }
     #restaurants .rectangle{
         display: flex;
