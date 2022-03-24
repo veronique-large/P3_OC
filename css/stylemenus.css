@@ -178,6 +178,13 @@ p{
         border-radius: 0 15px 15px 0;
         margin: 0 -81px 0 64px;
     }
+    div .choix:active{
+        margin: 0 0 0 34px;
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.33, 0.66, 0.34, 0.87);
+        transition-duration: 400ms;
+
+    }
     .far{
         background: #FFFFFF;
         color: #99e2d0;
