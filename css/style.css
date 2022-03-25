@@ -29,7 +29,7 @@ h3{
 h4{
     color:#FFFFFF;
 }
-form button, .coeur, div .choisir{
+form button, .coeur, .choisir div{
     cursor: pointer;
 }
 
@@ -110,7 +110,7 @@ form button, .coeur, div .choisir{
         background-color: #ba9fdb;
         box-shadow: 0 15px 15px 0 #cecece,
                     12px 16px 26px inset #f09be4;
-        transition-duration: 2s;
+        transition-duration: 1s;
     }
     main{
         padding: 0;
@@ -164,7 +164,7 @@ form button, .coeur, div .choisir{
     }
     .choisir:hover{
         color: #9356DC;
-        background-color: #f5edff;
+        background-color: #ba9fdb;
     }
     .choisir div p{
         color:#111111;
@@ -215,13 +215,13 @@ form button, .coeur, div .choisir{
         font-size: 21px;
     }
     
-    #restauration div .coeur .vide{
+    #restauration .coeur .vide{
         display: block;
         color:#7e7e7e;
         position: relative;
         opacity: 0.8;
     }
-    #restauration div .coeur .plein{
+    #restauration .coeur .plein{
         position: absolute;
         bottom: 47px;
         opacity: 0;
@@ -231,10 +231,10 @@ form button, .coeur, div .choisir{
         -webkit-text-fill-color: transparent;
         
     }
-    #restauration  .coeur .plein:hover{
+    #restauration .coeur .plein:hover{
         opacity: 1;
         transition-property: all;
-        transition-duration: 10s;  
+        transition-duration: 2s;  
     }
     #restaurants .rectangle{
         display: flex;
@@ -271,6 +271,9 @@ form button, .coeur, div .choisir{
     }
     a:link{
         text-decoration: none;
+    }
+    a:hover{
+        cursor:default;
     }
     .couvert{
         display: flex;
