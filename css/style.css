@@ -10,13 +10,8 @@ body{
     color: #111111;
     font-family: Roboto, sans-serif;
 }
-body{
-    transition-property: transform;
-    animation-delay: 4s;
-}
-body div{
+.page{
     display: block;
-    max-width: 1920px;
 }
 #loadingspinner{
     /* creation du laodingspinner*/
@@ -31,8 +26,7 @@ body div{
     border-radius: 50%;
     animation: spin 2s linear infinite;
     animation-duration: 2s;
-    opacity: 1;
-    
+    opacity: 1;  
    /*placement du loadingspinner au milieu de la page*/
     margin: auto;
     position: absolute;
@@ -48,19 +42,30 @@ body div{
         }
         100%{
              transform: rotate(360deg);
-        }
-           
+        }     
     }
     #loadingspinner::after{
-        transition-property:none;
-        animation-duration: 1s;
-        opacity: 0;}
+        animation-fill-mode: none;
+        animation-delay: 0.5s;
+        opacity: 0;
+        display:none;}
 
 #containeur{
     max-width: 1920px;
     margin:auto;
     padding: 0;
+    animation-delay: 1s;
+    animation: apparaition;
 }
+@keyframes apparaition {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+
  #navigation figure img, .rappellogo figure img{
     font-family: Shrikhand, sans-serif;
 }
