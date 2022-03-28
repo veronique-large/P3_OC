@@ -10,6 +10,52 @@ body{
     color: #111111;
     font-family: Roboto, sans-serif;
 }
+body{
+    transition-property: transform;
+    animation-delay: 4s;
+}
+body div{
+    display: block;
+    max-width: 1920px;
+}
+#loadingspinner{
+    /* creation du laodingspinner*/
+    width: 200px;
+    height: 200px;
+    box-shadow: 4px 2px 6px 6px #99e2d0,
+    6px 4px 6px 2px #FF79DA,
+    2px 0px 4px 4px #9356DC;
+    border-top: solid 10px #9356DC;
+    border-right: solid 8px #FF79DA;
+    border-bottom: solid 6px #99e2d0;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    animation-duration: 2s;
+    opacity: 1;
+    
+   /*placement du loadingspinner au milieu de la page*/
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+    /*animation du loadingspinner*/
+@keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+             transform: rotate(360deg);
+        }
+           
+    }
+    #loadingspinner::after{
+        transition-property:none;
+        animation-duration: 1s;
+        opacity: 0;}
+
 #containeur{
     max-width: 1920px;
     margin:auto;
@@ -95,6 +141,7 @@ form button, .coeur, .choisir div{
         text-align: center;
         margin-bottom: 20px;
     }
+    /*creation du bouton*/
     .Explorermenus form button{
         width: 185px;
         height: 42px;
@@ -103,9 +150,10 @@ form button, .coeur, .choisir div{
         border-radius: 20px;
         border: transparent;
         box-shadow: 0px 5px 5px 0px #cecece,
-                    12px 16px 26px inset#ea72da;
+                    12px 16px 26px inset#FF79DA;
         font-weight: 500;
     }
+    /*changement de couleur du bouton*/
     .Explorermenus form button:hover{
         background-color: #ba9fdb;
         box-shadow: 0 15px 15px 0 #cecece,
@@ -162,6 +210,7 @@ form button, .coeur, .choisir div{
     .icone{
         margin: 0 24px 0 12px;
     }
+    /*changement de couleur sur les filtres*/
     .choisir:hover{
         color: #9356DC;
         background-color: #ba9fdb;
@@ -221,16 +270,18 @@ form button, .coeur, .choisir div{
         position: relative;
         opacity: 0.8;
     }
+    /*creation du coeur*/
     #restauration .coeur .plein{
         position: absolute;
         bottom: 47px;
         opacity: 0;
-        background: -webkit-linear-gradient(top, #9356DC 4%, #ea72da 79%);
+        background: -webkit-linear-gradient(top, #9356DC 4%, #FF79DA 79%);
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
     }
+    /*transitions avec changement de couleur du coeur*/
     #restauration .coeur .plein:hover{
         opacity: 1;
         transition-property: all;
