@@ -151,6 +151,7 @@ p{
         border-radius: 15px;
         box-shadow:  5px 5px 5px#cecece;
         overflow: hidden;
+        animation: apparaition 1.5s linear both;
     }
     .texte{
         display: flex;
@@ -186,11 +187,15 @@ p{
         transition-timing-function: cubic-bezier(0.33, 0.66, 0.34, 0.87);
         margin: 0 0 0 72px;
     }
-    .far{
+    .choix .far{
         background: #FFFFFF;
         color: #99e2d0;
         border-radius: 50%;
         font-size: 21px;
+    }
+    .descriptif:hover .far {
+        transform: rotate(360deg);
+        transition: transform ease-in 500ms;
     }
     .prix{
         display: flex;
@@ -284,9 +289,7 @@ p{
      footer a.proposer, footer a.partenariat{
         text-decoration: none;
     }
-    a:hover{
-        cursor:default;
-    }  
+    
 /*}*/   
 @media screen and (min-width: 768px){
     header{
@@ -342,6 +345,10 @@ p{
 
     footer{
         margin: 0 5px 0;
+    }
+    li a{
+        color: #FFFFFF;
+        text-decoration: none;
     }
 }
 
