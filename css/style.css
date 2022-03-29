@@ -10,9 +10,14 @@ body{
     color: #111111;
     font-family: Roboto, sans-serif;
 }
-.page{
+#loadingspinner div{
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
     display: block;
+    animation: none;
 }
+
 #loadingspinner{
     /* creation du laodingspinner*/
     width: 200px;
@@ -40,25 +45,25 @@ body{
         0%{
             transform: rotate(0deg);
         }
+        
         100%{
              transform: rotate(360deg);
         }     
-    }
-    #loadingspinner::after{
-        animation-fill-mode: none;
-        animation-delay: 0.5s;
-        opacity: 0;
-        display:none;}
-
+    } 
+    /*animation sur le containeur*/
 #containeur{
     max-width: 1920px;
     margin:auto;
     padding: 0;
-    animation-delay: 1s;
-    animation: apparaition;
+    background: #FFFFFF;
+    animation:opacite 3s linear both;
+    animation-name: apparition;
 }
-@keyframes apparaition {
+@keyframes apparition {
     0%{
+        opacity: 0;
+    }
+    95%{
         opacity: 0;
     }
     100%{
@@ -80,7 +85,7 @@ h3{
 h4{
     color:#FFFFFF;
 }
-form button, .coeur, .choisir div{
+form button, .coeur, .choisir{
     cursor: pointer;
 }
 
@@ -218,7 +223,7 @@ form button, .coeur, .choisir div{
     /*changement de couleur sur les filtres*/
     .choisir:hover{
         color: #9356DC;
-        background-color: #ba9fdb;
+        background-color: #f5edff;
     }
     .choisir div p{
         color:#111111;
@@ -328,9 +333,7 @@ form button, .coeur, .choisir div{
     a:link{
         text-decoration: none;
     }
-    a:hover{
-        cursor:default;
-    }
+    
     .couvert{
         display: flex;
         margin-top: 70px;
@@ -341,10 +344,11 @@ form button, .coeur, .choisir div{
         margin-top: 98px;
         position: absolute;
     }
-    li{
+    li, li a{
         list-style-type: none;
         line-height: 30px;
         font-weight: lighter;
+        color:#FFFFFF;
     }
 
 /*}*/
