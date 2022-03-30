@@ -19,8 +19,8 @@ body{
 }
  /*creation du cercle pour l'animation des autres*/
 #cercle{
-    width: 305px;
-    height: 305px;
+    width: 190px;
+    height: 190px;
     border: solid 1px transparent;
     border-radius: 50%;
     margin: auto;
@@ -43,8 +43,8 @@ body{
 }
     /*creation d'un cercle animé autour du loading spinner*/
 #tourne{
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     border: solid 1px #9356DC;
     border-radius: 50%;
     margin: auto;
@@ -78,7 +78,7 @@ body{
     border: solid 1px #99e2d0;
     top: 0%;
     bottom: 0%;
-    left: 100%;
+    left: 90%;
     right: 0%;
 }
 .cerclerose{
@@ -116,13 +116,13 @@ body{
 }
 #loadingspinner{
     /* creation du centre du laodingspinner*/
-    width: 200px;
-    height: 200px;
-    box-shadow: 7px 4px 4px 5px #99e2d0,
+    width: 90px;
+    height: 90px;
+    box-shadow: 4px 4px 4px 6px #99e2d0,
     4px 3px 4px 8px #FF79DA,
-    17px 0px 7px -6px #9356DC;
+    17px 0px 7px -5px #9356DC;
     border-top: solid 8px #9356DC;
-    border-right: solid 11px #FF79DA;
+    border-right: solid 8px #FF79DA;
     border-bottom: solid 1px #99e2d0;
     border-radius: 50%;
     animation: spin 3s linear infinite;
