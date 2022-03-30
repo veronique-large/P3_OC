@@ -17,21 +17,125 @@ body{
     display: block;
     animation: none;
 }
-
+ /*creation du cercle pour l'animation des autres*/
+#cercle{
+    width: 305px;
+    height: 305px;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: rotation 3s linear infinite;
+    transition-timing-function: ease-in;
+}
+@keyframes rotation {
+    0%{
+        -webkit-transform: rotate(0);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+    
+}
+    /*creation d'un cercle animé autour du loading spinner*/
+#tourne{
+    width: 300px;
+    height: 300px;
+    border: solid 1px #9356DC;
+    border-radius: 50%;
+    margin: auto;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: tourne linear infinite;
+    animation-duration: 3s;
+}
+@keyframes tourne {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+    
+}
+    /*creation des cercles animés*/
+.cercleviolet{
+    width: 30px;
+    height: 30px;
+    background-color: #9356DC;
+    border: solid 1px #99e2d0;
+    border-radius: 50%;
+    margin:auto;
+    position:absolute;
+    top: 95%;
+    bottom: 95%;
+    left: -100%;
+    right: 0%;
+}
+.cerclerose{
+    width: 30px;
+    height: 30px;
+    background-color: #FF79DA;
+    border: solid 1px #9356DC;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: -98%;
+    bottom: 0;
+    left: 0%;
+    right: 0%
+}
+.cerclevert{
+    width: 30px;
+    height: 30px;
+    background-color: #99e2d0;
+    border: solid 1px #9356DC;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 95%;
+    bottom: -4%;
+    left: 0%;
+    right: 0%;
+}
+    /*animation des cercles de couleurs*/
+.cercleviolet, .cerclerose, .cerclevert{
+    animation: tourner linear infinite;
+    animation-duration: 3s;
+}
+@keyframes tourner {
+    0%{
+        transform: rotate(0);
+    }
+    5%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+    
+}
 #loadingspinner{
     /* creation du laodingspinner*/
     width: 200px;
     height: 200px;
-    box-shadow: 4px 2px 6px 6px #99e2d0,
-    6px 4px 6px 2px #FF79DA,
-    2px 0px 4px 4px #9356DC;
-    border-top: solid 10px #9356DC;
-    border-right: solid 8px #FF79DA;
-    border-bottom: solid 6px #99e2d0;
+    box-shadow: 7px 4px 4px 5px #99e2d0,
+    4px 3px 4px 8px #FF79DA,
+    17px 0px 7px -6px #9356DC;
+    border-top: solid 8px #9356DC;
+    border-right: solid 11px #FF79DA;
+    border-bottom: solid 1px #99e2d0;
     border-radius: 50%;
-    animation: spin 2s linear infinite;
-    animation-duration: 2s;
-    opacity: 1;  
+    animation: spin 3s linear infinite;
+    animation-duration: 3s;
+    opacity: 1; 
    /*placement du loadingspinner au milieu de la page*/
     margin: auto;
     position: absolute;
@@ -50,6 +154,21 @@ body{
              transform: rotate(360deg);
         }     
     } 
+    /*arret progressif des animations du loadingspinner*/
+.cercleviolet, .cerclerose, .cerclevert, #loadingspinner::after{
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-name: opaque;
+}
+@keyframes opaque {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
     /*animation sur le containeur*/
 #containeur{
     max-width: 1920px;
