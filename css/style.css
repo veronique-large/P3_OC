@@ -199,6 +199,12 @@ h4{
 form button, .coeur, .choisir{
     cursor: pointer;
 }
+a:-webkit-any-link{
+    cursor:pointer;
+}
+a:visited{
+    cursor: pointer;
+}
 
 /*@media screen and (max-width: 768px){*/
     
