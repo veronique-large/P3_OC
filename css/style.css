@@ -402,7 +402,7 @@ form button, .coeur, .choisir{
         -webkit-text-fill-color: transparent;
         
     }
-    /*transitions avec changement de couleur du coeur*/
+    /*transitions et opacité sur le coeur*/
     #restauration .coeur .plein:hover{
         opacity: 1;
         transition-property: all;
