@@ -202,10 +202,6 @@ form button, .coeur, .choisir{
 a:-webkit-any-link{
     cursor:pointer;
 }
-a:visited{
-    cursor: pointer;
-}
-
 /*@media screen and (max-width: 768px){*/
     
     header{                                     /*header*/
