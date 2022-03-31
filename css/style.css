@@ -17,6 +17,7 @@ body{
     display: block;
     animation: none;
 }
+    /*debut de creation du loading spinner*/
  /*creation du cercle pour l'animation des autres*/
 #cercle{
     width: 190px;
@@ -41,7 +42,7 @@ body{
     }
     
 }
-    /*creation d'un cercle animé autour du loading spinner*/
+    /*creation d'un cercle animé autour du centre du loading spinner*/
 #tourne{
     width: 180px;
     height: 180px;
