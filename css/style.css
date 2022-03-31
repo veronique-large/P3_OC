@@ -145,7 +145,7 @@ body{
              transform: rotate(360deg);
         }     
     } 
-    /*arret progressif des animations du loadingspinner*/
+    /*diminution progressive de la visibilite d'une partie du loadingspinner*/
 .cercleviolet, .cerclerose, .cerclevert, #loadingspinner::after{
     content:normal;
     animation-duration: 3s;
