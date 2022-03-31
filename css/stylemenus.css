@@ -180,6 +180,9 @@ p{
         transition-timing-function: cubic-bezier(0.33, 0.66, 0.34, 0.87);
         margin: 0 0 0 72px;
     }
+    .descriptif .choix{
+        transition: margin 1s;
+    }
     .choix .far{
         background: #FFFFFF;
         color: #99e2d0;
