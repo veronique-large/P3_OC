@@ -200,9 +200,6 @@ h4{
 form button, .coeur, .choisir{
     cursor: pointer;
 }
-a:-webkit-any-link{
-    cursor:pointer;
-}
 /*@media screen and (max-width: 768px){*/
     
     header{                                     /*header*/
@@ -274,7 +271,7 @@ a:-webkit-any-link{
         border-radius: 20px;
         border: transparent;
         box-shadow: 0px 5px 5px 0px #cecece,
-                    12px 16px 26px inset#FF79DA;
+                    12px 16px 26px inset #FF79DA;
         font-weight: 500;
     }
     /*changement de couleur du bouton*/
