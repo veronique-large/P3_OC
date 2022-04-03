@@ -107,6 +107,8 @@ p{
         color:#7e7e7e;
         opacity: 0.8;
     }
+        /*creation du coeur plein et de son degrade*/
+        /*positionnement du coeur*/
     .coeur .plein{
         position: absolute;
         top: 42px;
@@ -116,6 +118,7 @@ p{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+        /*transition lors du hover*/
     .coeur .plein:hover{
         opacity: 1;
         transition-property: all;
@@ -124,7 +127,6 @@ p{
     .coeur{
         margin-right: 11px;
         font-size: 24px;
-        cursor: pointer;
     }
     
     #Entrees, #Plats, #Desserts{ 
@@ -133,6 +135,7 @@ p{
         flex-direction: column;        
         padding: 15px 12px 30px;
     }
+        /*creation de .descriptif, avec une animation*/
     .descriptif{                       
         display:flex;
         align-items: center;
@@ -142,7 +145,7 @@ p{
         background: #FFFFFF;
         padding:8px 0 8px 8px;
         border-radius: 15px;
-        box-shadow:  5px 5px 5px#cecece;
+        box-shadow:  5px 5px 5px #cecece;
         overflow: hidden;
         animation: apparaition 1.5s linear both;
     }
@@ -172,23 +175,27 @@ p{
         max-width: 100%;
         height: 71px;
         border-radius: 0 15px 15px 0;
-        margin: 0 -85px 0 90px;
+        margin: 0 -99px 0 90px;
 
     }
+        /*transition du check lors du hover sur .descriptif*/
     .descriptif:hover .choix {  
         transition-duration: 200ms;
         transition-timing-function: cubic-bezier(0.33, 0.66, 0.34, 0.87);
         margin: 0 0 0 72px;
     }
+        /*transition pour retour du check*/
     .descriptif .choix{
         transition: margin 1s;
     }
+        /*creation du coche dans le check*/
     .choix .far{
         background: #FFFFFF;
         color: #99e2d0;
         border-radius: 50%;
         font-size: 21px;
-    }
+    }  
+        /*transition du coche*/
     .descriptif:hover .far {
         transform: rotate(360deg);
         transition: transform ease-in 500ms;
@@ -201,6 +208,7 @@ p{
         width: 54px;
         height: 54px;
     }
+        /*animation sur .descriptif, pour les menus*/
     #Menus .descriptif{
         animation-name: apparition;
         animation-duration: 2s; 
@@ -221,6 +229,7 @@ p{
         display:flex;
         justify-content: center;
     }
+        /*creation du bouton et ses couleurs*/
     form button{
         width: 185px;
         height: 42px;
@@ -229,11 +238,12 @@ p{
         border-radius: 20px;
         border: transparent;
         box-shadow: 0px 5px 5px 0px #cecece,
-                    12px 16px 26px inset#FF79da;
+                    12px 16px 26px inset #FF79da;
         font-weight: 500;
         font-size: small; 
         margin-bottom: 70px;
     }
+        /*changement des couleurs du bouton lors du hover*/
     form button:hover{
         background-color: #ba9fdb;
         box-shadow: 0 15px 15px 0 #cecece,
@@ -277,10 +287,10 @@ p{
         line-height: 30px;
         font-weight: lighter;
     }
-     footer a.proposer, footer a.partenariat{
+    footer a{
+        color: #FFFFFF;
         text-decoration: none;
     }
-    
 /*}*/   
 @media screen and (min-width: 768px){
     header{
@@ -297,7 +307,9 @@ p{
         width: 351px;
         height: 71px;
         max-width: 100%;
-    } 
+    }
+        /*animation sur les .descriptif des differentes
+         sections de menus*/ 
     #Menus .descriptif{
         animation-name: apparition;   
     }
@@ -336,10 +348,6 @@ p{
 
     footer{
         margin: 0 5px 0;
-    }
-    li a{
-        color: #FFFFFF;
-        text-decoration: none;
     }
 }
 
